@@ -1,0 +1,88 @@
+.table-container {
+  padding: 20px;
+  max-width: 150%;
+  overflow-x: auto;
+}
+
+.data-request-table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.data-request-table thead {
+  text-align: left;
+  background-color: var(--primary-color);
+}
+
+.data-request-table th{
+  padding: 12px;
+  border-bottom: 2px solid #ddd;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.data-request-table td {
+  padding: 12px ;
+  border-bottom: 2px solid #ddd;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.data-request-table td {
+  font-weight: normal; 
+  color: #555;
+  cursor: pointer;
+  height: 70px;
+}
+
+.data-request-table tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.data-request-table tbody tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+.data-request-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.expanded {
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+  padding: 10px;
+  width: 200px;
+}
+
+.table-cell {
+  max-width: 100px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+.delete-button,
+.edit-button {
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+  color: #fff;
+  outline: none;
+  margin: 5px;
+}
+
+.delete-button {
+  background-color: var(--delete-color);
+}
+
+.edit-button {
+  background-color: blue;
+}
+
+.input-search-container {
+  margin-bottom: 25px;
+}

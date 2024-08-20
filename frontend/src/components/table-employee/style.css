@@ -1,0 +1,120 @@
+.table-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  padding:20px
+}
+
+.employee-table {
+  width: 75%;
+  border-collapse: collapse;
+  margin-top: 25px;
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  overflow-x: auto; 
+}
+
+.employee-table thead tr {
+  background-color: #76c893;
+  color: var(--text-color);
+  text-align: left;
+}
+
+.employee-table th{
+  padding: 8px 10px;
+  word-wrap: break-word; 
+  max-width: 150px; 
+}
+.employee-table td {
+  padding: 8px 10px;
+  word-wrap: break-word; 
+  width: 200px; 
+  max-height: 30px;
+}
+
+.employee-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.employee-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.employee-table tbody tr:last-of-type {
+  border-bottom: 2px solid #76c893;
+}
+
+.employee-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+.no-records {
+  text-align: center;
+  color: #666;
+  padding: 20px;
+}
+
+.delete-button,
+.edit-button {
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+  color: #fff;
+  outline: none;
+  margin: 5px;
+}
+
+.delete-button {
+  background-color: var(--delete-color);
+}
+
+.edit-button {
+  background-color: var(--primary-color);
+}
+
+.delete-button:focus,
+.edit-button:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  .employee-table {
+    font-size: 14px;
+
+  }
+
+  .employee-table th,
+  .employee-table td {
+    padding: 6px 8px;
+  }
+
+  .delete-button,
+  .edit-button {
+    width: 70px;
+    height: 25px;
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .employee-table {
+    font-size: 12px;
+  }
+
+  .employee-table th,
+  .employee-table td {
+    padding: 4px 6px;
+    max-width: 100px; /* Reduce el ancho máximo para pantallas más pequeñas */
+  }
+
+  .delete-button,
+  .edit-button {
+    width: 60px;
+    height: 20px;
+    font-size: 8px;
+  }
+}

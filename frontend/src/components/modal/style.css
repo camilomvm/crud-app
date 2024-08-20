@@ -1,0 +1,55 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente */
+  height: auto; /* Ajusta la altura al contenido */
+  position: relative;
+}
+
+
+.modal-content p {
+  margin: 10px;
+}
+
+
+
+.modal-close:focus {
+  outline: none;
+}
+
+.buttons-modal {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%; /* Asegura que los botones se extiendan por todo el ancho del modal */
+  margin-top: 20px;
+}
+
+
+.confirm-button {
+  color: var(--text-color);
+  background-color: var(--delete-color);
+  padding: 10px 20px;
+}
+
+.cancel-button{
+  background-color: var(--cancel-color);
+  color: var(--text-color);
+}
