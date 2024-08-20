@@ -42,7 +42,7 @@ La aplicación frontend se ha desarrollado utilizando React.js para una interfaz
 ## Seguridad
 **Protección de Datos Sensibles**
 
-Los datos sensibles, como las claves secretas y las URL de la base de datos, se almacenan en un archivo .env y se cargan en el entorno de la aplicación. Asegúrate de nunca incluir el archivo .env en el repositorio de código fuente.
+Los datos sensibles, como las claves secretas y las URL de la base de datos, se almacenan en un archivo .env y se cargan en el entorno de la aplicación.
 
 **Autenticación y Autorización**
 
